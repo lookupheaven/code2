@@ -1,3 +1,3 @@
 code2 project 
-2026.05.16 NOV19(WSL)
+2026.05.16 NOV19(WSL) : first created
 
