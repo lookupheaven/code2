@@ -60,6 +60,9 @@ GitLab과 GitHub 키를 분리 관리합니다.
   ssh-keygen -t ed25519 -C "lookupheaven@gmail.com" -f ~/.ssh/id_github
 
   2. ~/.ssh/config 파일에 설정 추가
+
+(Windows11)  C:\Users\K\.ssh\config
+
   # GitLab (기존)
   Host gitlab.com
       HostName gitlab.com
@@ -93,6 +96,3 @@ GitLab과 GitHub 키를 분리 관리합니다.
 
   # HTTPS 방식 (SSH 설정 없이도 가능, 토큰 필요)
   git clone https://github.com/username/repo.git
-
-
-
