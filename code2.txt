@@ -35,3 +35,9 @@ git config --list
 	- K3(WSL) Installed 
 
 -----------------------------------
+
+
+2026.05.23
+	- NOV(windows11) setup
+
+	
