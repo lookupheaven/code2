@@ -94,5 +94,14 @@ GitLab과 GitHub 키를 분리 관리합니다.
   # SSH 방식 (설정 후)
   git clone git@github.com:username/repo.git
 
-  # HTTPS 방식 (SSH 설정 없이도 가능, 토큰 필요)
-  git clone https://github.com/username/repo.git
+  # HTTPS 방식 (SSH 설정 없이도 가능, 토큰 필요)  
+  git clone https://github.com/username/repo.git 
+
+----------------------------------------------------
+
+  +2026.05.18 
++       - K3(WSL) Installed 
+
++2026.05.23
++       - NOV(windows11) setup
+
