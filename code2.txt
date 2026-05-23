@@ -41,3 +41,58 @@ git config --list
 	- NOV(windows11) setup
 
 	
+git config --list
+-------------------------------------
+
+
+Windows11 
+claude 설치 
+
+PATH 
+ C:\Users\K\.local\bin
+
+
+Git
+
+GitLab과 GitHub 키를 분리 관리합니다.
+
+  1. GitHub 전용 키 생성
+  ssh-keygen -t ed25519 -C "lookupheaven@gmail.com" -f ~/.ssh/id_github
+
+  2. ~/.ssh/config 파일에 설정 추가
+  # GitLab (기존)
+  Host gitlab.com
+      HostName gitlab.com
+      User git
+      IdentityFile ~/.ssh/id_rsa
+
+  # GitHub (신규)
+  Host github.com
+      HostName github.com
+      User git
+      IdentityFile ~/.ssh/id_github
+
+  3. GitHub에 공개키 등록
+  cat ~/.ssh/id_github.pub
+  → 위 내용을 https://github.com/settings/keys 에 등록
+
+
+ 4. SSH agent에 키 추가
+  ssh-agent
+  ssh-add ~/.ssh/id_github
+
+  5. 연결 테스트
+  ssh -T git@github.com
+  # Hi username! You've successfully authenticated...
+
+  ---
+  GitHub 저장소 클론 및 사용
+
+  # SSH 방식 (설정 후)
+  git clone git@github.com:username/repo.git
+
+  # HTTPS 방식 (SSH 설정 없이도 가능, 토큰 필요)
+  git clone https://github.com/username/repo.git
+
+
+
